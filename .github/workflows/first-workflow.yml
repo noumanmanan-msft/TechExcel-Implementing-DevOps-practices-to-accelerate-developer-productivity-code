@@ -77,7 +77,7 @@ jobs:
 
       - uses: azure/webapps-deploy@v2
         with:
-          app-name: 'as-techexcel-001-dev'
+          app-name: 'as-techexcel-001-dev.azurewebsites.net'
           images: acrtechexcel001.azurecr.io/techboost/dotnetcoreapp:${{github.run_number}}
 
   deploy-to-test:
