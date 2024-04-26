@@ -98,7 +98,7 @@ jobs:
 
     - uses: azure/webapps-deploy@v2
       with:
-        app-name: 'as-techexcel-001-test'
+        app-name: 'as-techexcel-001'
         images: acrtechexcel001.azurecr.io/techboost/dotnetcoreapp:${{github.run_number}}
 
   deploy-to-prod:
@@ -119,5 +119,5 @@ jobs:
 
     - uses: azure/webapps-deploy@v2
       with:
-        app-name: 'as-techexcel-001-prod'
+        app-name: 'as-techexcel-001'
         images: acrtechexcel001.azurecr.io/techboost/dotnetcoreapp:${{github.run_number}}
